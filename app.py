@@ -47,7 +47,7 @@ def create_initial_data(days=120, seed=0):
     load = np.maximum(500, load)
 
     idx = pd.date_range(
-        end=pd.Timestamp.now().floor("H") - pd.Timedelta(hours=1),
+        end=pd.Timestamp.now().floor("h") - pd.Timedelta(hours=1),
         periods=hours,
         freq="H"
     )
