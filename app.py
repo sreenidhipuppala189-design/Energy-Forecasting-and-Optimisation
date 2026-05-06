@@ -49,7 +49,7 @@ def create_initial_data(days=120, seed=0):
     idx = pd.date_range(
         end=pd.Timestamp.now().floor("h") - pd.Timedelta(hours=1),
         periods=hours,
-        freq="H"
+        freq="h"
     )
 
     df = pd.DataFrame(
