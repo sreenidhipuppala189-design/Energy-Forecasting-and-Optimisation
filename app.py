@@ -171,7 +171,7 @@ pred = scaler_y.inverse_transform(pred.reshape(-1, 1)).flatten()
 pred_index = pd.date_range(
     start=df.index[-1] + pd.Timedelta(hours=1),
     periods=forecast_horizon,
-    freq="H"
+    freq="h"
 )
 
 forecast_df = pd.DataFrame({"pred_load": pred}, index=pred_index)
